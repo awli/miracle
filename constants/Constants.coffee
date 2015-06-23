@@ -6,6 +6,6 @@ keyMirror = require('keymirror')
 
 # Export is a dictionary.
 module.exports =
-  VERSION: '0.4.0'
+  VERSION: '0.0.1'
   ActionTypes: keyMirror
     UPDATE_GAMEPADS: null
