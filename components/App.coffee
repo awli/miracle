@@ -4,8 +4,8 @@ RouteHandler = Router.RouteHandler
 
 DNav = require('./DNav')
 
-module.exports = Daemon = React.createClass
-  displayName: 'Daemon'
+module.exports = Miracle = React.createClass
+  displayName: 'Miracle'
 
   render: ->
     <div>

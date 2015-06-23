@@ -5,7 +5,7 @@
  */
 
 var app = require('./app');
-var debug = require('debug')('daemon:server');
+var debug = require('debug')('miracle:server');
 var http = require('http');
 
 /**
