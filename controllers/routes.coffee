@@ -1,8 +1,10 @@
+# Server side router (you shouldn't have to change this)
 express = require('express')
 router = express.Router()
 jsx = require('node-jsx').install()
 React = require('react')
 Router = require('react-router')
+# Require the routes defined in the client-side router
 routes = require('../routes')
 
 # Delegate most things to the appropriate namespace
@@ -18,7 +20,7 @@ router.use (req, res, next) ->
     if state.routes.length == 0
       return next() # we've gotten to an illegal path
     markup = React.renderToString(<Handler {...rootProps}/>)
-    res.render 'home',
+    res.render 'home', # see views/layouts/home.handlebars
       markup: markup
       rootProps: JSON.stringify rootProps
 
