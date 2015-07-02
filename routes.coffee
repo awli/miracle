@@ -7,6 +7,7 @@ App = require('./components/App')
 Edit = require('./components/Edit')
 Debug = require('./components/Debug')
 Dashboard = require('./components/Dashboard')
+About = require('./components/About')
 
 module.exports = routes =
   <Route handler={App} path='/'>
@@ -14,4 +15,5 @@ module.exports = routes =
     <Route handler={Edit} name='edit'/>
     <Route handler={Debug} name='debug'/>
     <Route handler={Dashboard} name='dashboard'/>
+    <Route handler={About} name ='about'/>
   </Route>
